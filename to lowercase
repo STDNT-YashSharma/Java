@@ -1,0 +1,16 @@
+class JavaApplication4
+{
+public static void main(String arys[])
+
+{int i;
+  String S1,S2;
+  S1 = new String("YASH");
+  
+  i=S1.length();
+  System.out.println(i);
+  
+  S2=S1.toLowerCase();
+  System.out.println(S2);
+}
+    
+}
