@@ -1,0 +1,34 @@
+class Overriding
+{   int x;
+   // int n;
+    Overriding(int x)
+    {
+        this.x = x;
+    }
+    void display()
+    {
+        System.out.println("Display x:"+x);
+    }
+}
+    class Sub extends Overriding
+            {
+                int y;
+                Sub(int x, int y)
+                {
+                    super(x);
+                    this.y = y;
+                }
+                void display()
+                {
+                    System.out.println(x);
+                    System.out.println(y);
+                }
+            }
+    class Overridetest
+            {
+                public static void main(String args[])
+                {
+                Sub obj1 = new Sub(100,200);
+                obj1.display();
+            }
+}
