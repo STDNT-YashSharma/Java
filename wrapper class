@@ -1,0 +1,22 @@
+public class JavaApplication4
+{
+    public static void main(String args[])
+    {
+        int i=20;
+        Integer obj1=new Integer(i);
+        System.out.println(obj1);
+        
+        i=obj1.intValue();
+        System.out.println(i);
+        
+        String str= Integer.toString(i);
+        System.out.println(str);
+        
+        Integer s=Integer.valueOf(str);
+        System.out.println(s);
+        
+        int a=Integer.parseInt(str);
+        System.out.println(a);
+        
+    }
+}
