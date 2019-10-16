@@ -1,0 +1,26 @@
+package practical.test;
+
+import java.util.Scanner;
+class Count{
+
+public int count7(int n){
+    int counter = 0;
+    if (n % 10 == 7) counter++;
+    if (n / 10 == 0) return counter;
+    return counter+ count7(n/10);
+}
+}
+
+public class Main{
+    public static void main(String[] args) {
+        int s;
+        Scanner s1=new Scanner(System.in);
+        Count s2=new Count();
+        System.out.println("Enter the values of start and end.");
+        s=s1.nextInt();
+       
+        int[] arr2=new int[end - start];
+        arr2=s2.count7(start,end);
+    }
+    
+}
