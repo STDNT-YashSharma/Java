@@ -1,0 +1,30 @@
+package parrot;
+
+import java.util.Scanner;
+class Parrot1 {
+public boolean Parrottrouble(boolean talking, int hour)
+{
+    if( hour > 20 || hour < 7 )
+    return true;
+    else
+    return false;
+} 
+
+}
+
+public class Parrot
+{
+    public static void main(String[] args)
+    {int hour; boolean talking; boolean stat;
+    Parrot1 S1= new Parrot1();
+    Scanner S2= new Scanner(System.in);
+    hour= S2.nextInt();
+    talking=S2.nextBoolean();
+    stat= S1.Parrottrouble(talking,hour);
+    if(stat==true)
+        System.out.println("We are in danger");
+    else
+        System.out.println("We are safe");
+    }
+}
+
